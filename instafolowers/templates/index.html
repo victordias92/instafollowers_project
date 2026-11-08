@@ -1,0 +1,217 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pacotes de Seguidores Instagram — InstaBoost</title>
+  <meta name="description" content="Pacotes rápidos e seguros de seguidores para Instagram. Planos para perfis pessoais e comerciais com suporte e garantia." />
+  <meta name="author" content="InstaBoost" />
+<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+<style>
+     </style>
+</head>
+
+<body>
+  <button style="width: 300px; color: red; background: #071026;" onclick="teste()">testeeeeee</button>
+  
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">IB</div>
+        <div>
+          <div style="font-weight:800;font-size:16px;color:#fff">InstaBoost</div>
+          <div style="font-size:12px;color:var(--muted)">Cresça seu perfil com segurança</div>
+        </div>
+      </div>
+
+      <nav aria-label="Menu principal">
+        <a href="#pacotes">Pacotes</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Pacotes de seguidores para Instagram</h1>
+          <p class="lead">Aumente sua presença no Instagram com pacotes rápidos e suporte dedicado. Ideal para perfis pessoais, marcas e criadores de conteúdo.</p>
+
+          <div class="cta-row">
+            <button class="btn" onclick="openBuyModal('Starter', 49)">Comprar agora</button>
+            <a class="btn secondary" href="#pacotes">Ver pacotes</a>
+          </div>
+
+          <div class="info">
+            <span class="badge">Entrega rápida</span>
+            <span style="margin-left:10px" class="small">Suporte 24/7; Garantia de retenção por 7 dias</span>
+          </div>
+        </div>
+
+        <aside style="padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));">
+          <h3 style="margin-top:0;color:#fff">Por que escolher</h3>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>Perfis reais e segmentados</li>
+            <li>Entrega gradual e segura</li>
+            <li>Suporte via chat e e-mail</li>
+            <li>Pagamento seguro</li>
+          </ul>
+          
+
+            <script src="https://sdk.mercadopago.com/js/v2"></script>
+          <div style="margin-top:12px">
+            <div class="small">Métodos de pagamento aceitos</div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <div style="background:#fff;padding:8px;border-radius:8px;color:#111;font-weight:700;font-size:13px">Cartão</div>
+              <div style="background:#fff;padding:8px;border-radius:8px;color:#111;font-weight:700;font-size:13px">PIX</div>
+              <div style="background:#fff;padding:8px;border-radius:8px;color:#111;font-weight:700;font-size:13px">Boleto</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="pacotes" style="margin-top:28px">
+        <h2 style="color:#fff">Nossos pacotes</h2>
+        <div class="card-grid" role="list">
+          <article class="pkg" role="listitem" aria-label="Pacote Starter">
+            <div class="badge">Mais popular</div>
+            <h3>Starter</h3>
+            <div class="price">R$49</div>
+            <div class="features">500 seguidores; Entrega em 24-48h; Suporte básico</div>
+            <div class="buy">
+              <button class="btn" onclick="openBuyModal('Starter',0.1)">Comprar</button>
+              <div id="walletBrick_container"></div>
+            </div>
+          </article>
+
+          <article class="pkg" role="listitem" aria-label="Pacote Growth">
+            <h3>Growth</h3>
+            <div class="price">R$129</div>
+            <div class="features">2.000 seguidores; Entrega em 48-72h; Segmentação por interesse</div>
+            <div class="buy">
+              <button class="btn" onclick="openBuyModal('Growth',129)">Comprar</button>
+            </div>
+          </article>
+
+          <article class="pkg" role="listitem" aria-label="Pacote Pro">
+            <h3>Pro</h3>
+            <div class="price">R$299</div>
+            <div class="features">10.000 seguidores; Entrega em 5-7 dias; Gerente de conta</div>
+            <div class="buy">
+              <button class="btn" onclick="openBuyModal('Pro',299)">Comprar</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="small" style="margin-top:12px;color:var(--muted)">Observação: resultados podem variar. Recomendamos combinar crescimento orgânico com nossos pacotes para melhores resultados.</p>
+      </section>
+
+      <section id="como-funciona" style="margin-top:28px">
+        <h2 style="color:#fff">Como funciona</h2>
+        <ol style="color:var(--muted);padding-left:18px">
+          <li>Escolha o pacote e finalize o pagamento.</li>
+          <li>Envie o usuário alvo (perfil público) e preferências de segmentação.</li>
+          <li>Iniciamos a entrega gradual para evitar bloqueios.</li>
+          <li>Suporte disponível até 7 dias após entrega para ajustes.</li>
+        </ol>
+      </section>
+
+      <section class="testimonials" aria-label="Testemunhos">
+        <div class="testimonial">
+          <strong>Mariana R.</strong>
+          <p class="small" style="color:var(--muted)">"Comprei o pacote Growth e vi aumento real de engajamento. Atendimento rápido."</p>
+        </div>
+        <div class="testimonial">
+          <strong>Lucas M.</strong>
+          <p class="small" style="color:var(--muted)">"Entrega conforme prometido. Recomendo para quem quer dar um impulso inicial."</p>
+        </div>
+      </section>
+
+      <section id="faq" class="faq" aria-label="Perguntas frequentes">
+        <h2 style="color:#fff">FAQ</h2>
+        <div class="faq-item">
+          <strong>É seguro usar esses pacotes?</strong>
+          <p class="small" style="margin:6px 0;color:var(--muted)">Sim. Trabalhamos com entregas graduais e perfis reais para reduzir riscos. No entanto, nenhuma ação externa garante 100% de segurança frente às políticas das plataformas.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Quanto tempo leva a entrega?</strong>
+          <p class="small" style="margin:6px 0;color:var(--muted)">Depende do pacote: de 24 horas a 7 dias. Informações específicas aparecem na página do pacote.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Posso pedir reembolso?</strong>
+          <p class="small" style="margin:6px 0;color:var(--muted)">Oferecemos garantia parcial conforme nossa política. Entre em contato com suporte para avaliação.</p>
+        </div>
+      </section>
+
+      <section id="contato" class="contact" aria-label="Contato">
+        <div>
+          <h2 style="color:#fff">Fale com a gente</h2>
+          <form id="contactForm" onsubmit="submitContact(event)" novalidate>
+            <div style="display:flex;gap:8px;margin-bottom:8px">
+              <input type="text" id="name" placeholder="Seu nome" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff" />
+              <input type="email" id="email" placeholder="Seu e-mail" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff" />
+            </div>
+            <textarea id="message" placeholder="Como podemos ajudar?" rows="4" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff"></textarea>
+            <div style="margin-top:8px">
+              <button class="btn" type="submit">Enviar mensagem</button>
+            </div>
+            <p id="contactStatus" class="small" style="margin-top:8px;color:var(--muted)"></p>
+          </form>
+        </div>
+
+        <aside style="padding:16px;border-radius:10px;background:rgba(255,255,255,0.02)">
+          <h3 style="margin-top:0;color:#fff">Atendimento</h3>
+          <p class="small" style="color:var(--muted)">E-mail: suporte@instaboost.exemplo</p>
+          <p class="small" style="color:var(--muted)">Tempo médio de resposta: 2 horas</p>
+          <div style="margin-top:12px">
+            <strong style="color:#fff">Garantia</strong>
+            <p class="small" style="color:var(--muted)">Retenção mínima garantida por 7 dias; suporte para reposição quando aplicável.</p>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>© <strong>InstaBoost</strong> — Todos os direitos reservados</div>
+          <div class="small">Termos e Política de Privacidade</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Modal de compra -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document" aria-labelledby="modalTitle">
+      <h4 id="modalTitle">Finalizar compra</h4>
+      <p class="small" id="modalSubtitle" style="margin-top:6px;color:var(--muted)">Revise os dados e confirme o pagamento.</p>
+
+      <form id="buyForm"  style="margin-top:12px">
+        <div class="form-row">
+          <input type="text" id="buyerName" placeholder="Nome completo" required />
+        </div>
+        <div class="form-row" style="margin-top:8px">
+          <input type="email" id="buyerEmail" placeholder="E-mail" required />
+          <input type="text" id="link" placeholder="Link do seu Instagram" required />
+        </div>
+        <div class="form-row" style="margin-top:8px">
+          <select id="paymentMethod" required>
+            <option value="">Selecione método de pagamento</option>
+            <option value="card">Cartão</option>
+            <option value="pix">PIX</option>
+            <option value="boleto">Boleto</option>
+          </select>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;justify-content:flex-end">
+          <button type="button" class="btn secondary" onclick="closeModal()">Cancelar</button>
+          <button type="submit" class="btn" onclick="criarPreference()">Confirmar pagamento</button>
+        </div>
+        <p id="buyStatus" class="small" style="margin-top:8px;color:var(--muted)"></p>
+      </form>
+    </div>
+  </div>
+<script src="{% static 'core/js/main.js' %}"></script>
+</body>
+</html>
