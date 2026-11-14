@@ -1,5 +1,5 @@
 InstaFollowers
-Plataforma de crescimento para redes sociais desenvolvida para ajudar criadores de conteúdo, influenciadores, empreendedores e marcas a ampliar sua presença digital por meio de soluções voltadas para engajamento e visibilidade.
+Plataforma de marketing digital e engajamento para redes sociais desenvolvida para ajudar criadores de conteúdo, influenciadores, empreendedores e marcas a ampliar sua presença digital por meio de soluções voltadas para engajamento e visibilidade.
 
 🚀 Sobre o Projeto
 O InstaFollowers é uma plataforma web criada para simplificar a contratação de serviços voltados ao crescimento de perfis em redes sociais. A aplicação oferece uma experiência intuitiva para aquisição de pacotes de seguidores, curtidas, visualizações e outros serviços de marketing digital.
@@ -59,7 +59,6 @@ Fornecer uma plataforma moderna, segura e escalável para auxiliar usuários no 
 
 Este projeto está disponível para fins de estudo e desenvolvimento.
 
-
-Uma dica importante: se sua plataforma oferece seguidores, curtidas ou engajamento para Instagram/TikTok/YouTube, evite prometer "crescimento garantido" ou "resultados instantâneos" no README. É melhor descrever como uma plataforma de **marketing digital e impulsionamento de presença online**, pois passa mais credibilidade e profissionalismo.
+.
 
 
