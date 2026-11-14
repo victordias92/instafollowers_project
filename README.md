@@ -27,6 +27,7 @@ FastAPI
 Integrações
 API de pagamentos
 APIs de automação e marketing digital
+Cursor ferramenta de codificação IA.
 
 
 📂 Estrutura do Projeto
