@@ -14,6 +14,7 @@ Consulta de status dos pedidos
 Interface responsiva para desktop e dispositivos móveis
 Área administrativa para gerenciamento de serviços
 Integração com APIs externas
+
 🛠️ Tecnologias Utilizadas
 Frontend
 React
@@ -26,6 +27,8 @@ FastAPI
 Integrações
 API de pagamentos
 APIs de automação e marketing digital
+
+
 📂 Estrutura do Projeto
 frontend/
 ├── src/
